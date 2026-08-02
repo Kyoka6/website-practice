@@ -46,6 +46,24 @@ backToTopButton.addEventListener("click", function(){
 
 const planets = [
     {
+        id: "sun",
+        name: "Sun",
+        description: "The star at the center of our solar system",
+        moons: 0
+    },
+    {
+        id: "mercury",
+        name: "Mercury",
+        description: "Closest planet to the Sun",
+        moons: 0
+    },
+    {
+        id: "venus",
+        name: "Venus",
+        description: "Hottest planet with thick clouds",
+        moons: 0
+    },
+    {
         id: "mars",
         name: "Mars",
         description: "Cold, dusty world",
@@ -62,6 +80,30 @@ const planets = [
         name: "Jupiter",
         description: "A gas giant",
         moons: "95+"
+    },
+    {
+        id: "saturn",
+        name: "Saturn",
+        description: "Famous for its bright rings",
+        moons: "146+"
+    },
+    {
+        id: "uranus",
+        name: "Uranus",
+        description: "An ice giant that rotates on its side",
+        moons: 27
+    },
+    {
+        id: "neptune",
+        name: "Neptune",
+        description: "Farthest planet from the Sun",
+        moons: 14
+    },
+    {
+        id: "moon",
+        name: "Moon",
+        description: "Earth's natural satellite",
+        moons: 0
     }
 
 ];
@@ -75,23 +117,32 @@ console.log(searchInput);
 console.log(searchResults);
 console.log(planets);
 
-searchButton.addEventListener("click", function () {
-    const searchTerm = searchInput.value;
-    const result = planets.find(function(planet) {
-        return planet.name.toLowerCase() === searchTerm.toLowerCase();
-    }); 
 
-    if (result) {
+
+function searchPlanet() {
+    const searchTerm = searchInput.value;
+
+    const result = planets.find(function(planet) {
+        return planet.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+
+    if (result){
+        searchResults.textContent = result.description; 
+
         const planetSection = document.getElementById(result.id);
 
         planetSection.scrollIntoView({
             behavior: "smooth"
         });
-        
+    } else {
+        searchResults.textContent = "Not Found"
+    }
+}
 
-    }
-    else {
-        searchResults.textContent = "not found";
-    }
+
+searchButton.addEventListener("click", searchPlanet);
+
+searchInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter")
+        searchPlanet();
 });
-
