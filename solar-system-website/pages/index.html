@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System Explorer</title>
+    <meta
+      name="description"
+      content="A polished educational homepage about the solar system with tabbed celestial body sections."
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Discover our cosmic neighborhood</p>
+        <h1>Solar System Explorer</h1>
+        <p class="hero-text">
+          Learn about the Sun, the planets, and the moons that make up our
+          solar system in one elegant, easy-to-navigate experience.
+        </p>
+        <div class="button-row" role="group" aria-label="Quick links">
+          <a class="button" href="#home">Explore the cosmos</a>
+          <a class="button button-secondary" href="#sun">View the Sun</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 500 380" role="img" aria-label="Illustration of a solar system scene">
+          <rect x="0" y="0" width="500" height="380" rx="28" fill="#07111f" />
+          <circle cx="118" cy="110" r="58" fill="#ffd166" />
+          <circle cx="354" cy="128" r="24" fill="#8ecae6" />
+          <circle cx="399" cy="260" r="18" fill="#ffb703" />
+          <circle cx="184" cy="270" r="14" fill="#99d98c" />
+          <path d="M75 72c23-32 65-36 88-16" stroke="#ffb703" stroke-width="6" stroke-linecap="round" />
+          <path d="M403 186c18-15 42-17 63-4" stroke="#7bdff2" stroke-width="6" stroke-linecap="round" />
+          <circle cx="92" cy="84" r="4" fill="#ffffff" />
+          <circle cx="421" cy="90" r="3" fill="#ffffff" />
+          <circle cx="312" cy="82" r="2" fill="#ffffff" />
+          <circle cx="273" cy="287" r="2" fill="#ffffff" />
+          <circle cx="148" cy="338" r="1.5" fill="#ffffff" />
+          <circle cx="439" cy="324" r="2" fill="#ffffff" />
+          <ellipse cx="205" cy="214" rx="120" ry="72" fill="none" stroke="#6a7dff" stroke-width="3" stroke-dasharray="6 8" />
+        </svg>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="intro-card" id="home">
+        <div class="intro-copy">
+          <p class="eyebrow">A whole system, one page</p>
+          <h2>Our solar system is a dynamic family of worlds</h2>
+          <p>
+            The Sun anchors a vast collection of worlds, each with distinct
+            stories, temperatures, and histories. This homepage brings the
+            major celestial bodies together in a simple, informative layout.
+          </p>
+        </div>
+        <div class="facts-grid" aria-label="Interesting facts">
+          <article class="fact-card">
+            <h3>Fun fact</h3>
+            <p>The Sun contains about 99.8% of the solar system's mass.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fun fact</h3>
+            <p>Jupiter is so large that over 1,300 Earths could fit inside it.</p>
+          </article>
+          <article class="fact-card">
+            <h3>Fun fact</h3>
+            <p>Neptune is the windiest planet in our solar system.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="overview-card" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">A quick tour of the celestial bodies</h2>
+        </div>
+        <div class="overview-grid">
+          <article class="overview-item">
+            <h3>Star</h3>
+            <p>The Sun powers the solar system with light and heat.</p>
+          </article>
+          <article class="overview-item">
+            <h3>Inner worlds</h3>
+            <p>Mercury, Venus, Earth, and Mars are rocky planets.</p>
+          </article>
+          <article class="overview-item">
+            <h3>Gas giants</h3>
+            <p>Jupiter and Saturn are massive worlds with strong storms and rings.</p>
+          </article>
+          <article class="overview-item">
+            <h3>Icy giants</h3>
+            <p>Uranus and Neptune are frozen giants with deep blue atmospheres.</p>
+          </article>
+        </div>
+      </section>
+
+      <nav class="tab-nav" aria-label="Celestial body navigation">
+        <a class="tab-link" href="#sun" id="sun-tab">Sun</a>
+        <a class="tab-link" href="#mercury" id="mercury-tab">Mercury</a>
+        <a class="tab-link" href="#venus" id="venus-tab">Venus</a>
+        <a class="tab-link" href="#earth" id="earth-tab">Earth</a>
+        <a class="tab-link" href="#mars" id="mars-tab">Mars</a>
+        <a class="tab-link" href="#jupiter" id="jupiter-tab">Jupiter</a>
+        <a class="tab-link" href="#saturn" id="saturn-tab">Saturn</a>
+        <a class="tab-link" href="#uranus" id="uranus-tab">Uranus</a>
+        <a class="tab-link" href="#neptune" id="neptune-tab">Neptune</a>
+        <a class="tab-link" href="#moon" id="moon-tab">Moon</a>
+      </nav>
+
+      <section class="body-section" id="sun" data-body="sun" aria-labelledby="sun-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="sun-title">The Sun</h2>
+          <p>
+            The Sun is the star at the center of our solar system. It creates
+            the energy that supports life on Earth and shapes the environment
+            of every planet in the system.
+          </p>
+          <ul class="fact-list">
+            <li>It is a yellow dwarf star.</li>
+            <li>It is about 4.6 billion years old.</li>
+            <li>It produces energy through nuclear fusion.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>G-type main-sequence star</dd>
+            </div>
+            <div>
+              <dt>Diameter</dt>
+              <dd>About 1.39 million km</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of the Sun">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="127" r="72" fill="#ffb703" />
+            <circle cx="160" cy="127" r="52" fill="#ffd166" />
+            <path d="M96 70c18-22 43-26 64-18" stroke="#ff7f50" stroke-width="6" stroke-linecap="round" />
+            <path d="M224 89c22-9 42-4 58 8" stroke="#ff7f50" stroke-width="6" stroke-linecap="round" />
+            <path d="M98 176c14 20 37 30 62 30" stroke="#ff7f50" stroke-width="6" stroke-linecap="round" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="mercury" data-body="mercury" aria-labelledby="mercury-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="mercury-title">Mercury</h2>
+          <p>
+            Mercury is the closest planet to the Sun and has extreme temperature
+            swings because it lacks a meaningful atmosphere.
+          </p>
+          <ul class="fact-list">
+            <li>It is the smallest planet in the solar system.</li>
+            <li>It has a heavily cratered surface.</li>
+            <li>It completes a year in just 88 Earth days.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Rocky terrestrial planet</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>0</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Mercury">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="70" fill="#7a7a7a" />
+            <circle cx="140" cy="120" r="12" fill="#575757" />
+            <circle cx="180" cy="110" r="8" fill="#575757" />
+            <circle cx="182" cy="156" r="15" fill="#575757" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="venus" data-body="venus" aria-labelledby="venus-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="venus-title">Venus</h2>
+          <p>
+            Venus is wrapped in thick clouds and is the hottest planet in our
+            solar system due to its dense greenhouse atmosphere.
+          </p>
+          <ul class="fact-list">
+            <li>It spins very slowly in the opposite direction.</li>
+            <li>Its surface is hidden beneath clouds.</li>
+            <li>It is often called Earth's twin because of its similar size.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Rocky terrestrial planet</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>0</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Venus">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#e9c46a" />
+            <ellipse cx="160" cy="132" rx="58" ry="38" fill="none" stroke="#f4a261" stroke-width="8" />
+            <ellipse cx="160" cy="132" rx="40" ry="22" fill="none" stroke="#e76f51" stroke-width="6" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="earth" data-body="earth" aria-labelledby="earth-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="earth-title">Earth</h2>
+          <p>
+            Earth is the only known planet where life thrives. Oceans, air, and
+            climate systems make it uniquely suited to support diverse life.
+          </p>
+          <ul class="fact-list">
+            <li>About 71% of its surface is covered by oceans.</li>
+            <li>It has one natural moon.</li>
+            <li>Its atmosphere protects life from harmful radiation.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Rocky terrestrial planet</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>1</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Earth">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#4f9d69" />
+            <circle cx="160" cy="132" r="72" fill="#2a9d8f" clip-path="url(#earthClip)" />
+            <clipPath id="earthClip">
+              <rect x="86" y="86" width="148" height="92" rx="40" />
+            </clipPath>
+            <ellipse cx="190" cy="115" rx="36" ry="22" fill="#e9f5ff" opacity="0.8" />
+            <ellipse cx="140" cy="160" rx="44" ry="24" fill="#e9f5ff" opacity="0.75" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="mars" data-body="mars" aria-labelledby="mars-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="mars-title">Mars</h2>
+          <p>
+            Mars is a cold, dusty world with the tallest volcano and deepest
+            canyon in the solar system.
+          </p>
+          <ul class="fact-list">
+            <li>It has polar ice caps.</li>
+            <li>Its red color comes from iron oxide.</li>
+            <li>It has two small moons: Phobos and Deimos.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Rocky terrestrial planet</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>2</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Mars">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#c15c3d" />
+            <circle cx="136" cy="108" r="12" fill="#9c3d2c" />
+            <circle cx="186" cy="116" r="8" fill="#9c3d2c" />
+            <ellipse cx="160" cy="166" rx="48" ry="20" fill="#8c2f1b" opacity="0.65" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="jupiter" data-body="jupiter" aria-labelledby="jupiter-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="jupiter-title">Jupiter</h2>
+          <p>
+            Jupiter is the largest planet and a stormy world known for the Great
+            Red Spot, a giant anticyclonic storm.
+          </p>
+          <ul class="fact-list">
+            <li>It is a gas giant.</li>
+            <li>It has many moons, including Europa and Io.</li>
+            <li>It has a faint ring system.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Gas giant</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>95+</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Jupiter">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="78" fill="#d88c4a" />
+            <ellipse cx="160" cy="110" rx="60" ry="22" fill="#b76b3a" opacity="0.9" />
+            <ellipse cx="160" cy="152" rx="54" ry="18" fill="#9b4e25" opacity="0.85" />
+            <ellipse cx="160" cy="178" rx="48" ry="14" fill="#7b3f11" opacity="0.8" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="saturn" data-body="saturn" aria-labelledby="saturn-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="saturn-title">Saturn</h2>
+          <p>
+            Saturn is famous for its bright rings, which are made mostly of ice
+            and rock fragments.
+          </p>
+          <ul class="fact-list">
+            <li>It is the second-largest planet.</li>
+            <li>Its rings extend far beyond the planet itself.</li>
+            <li>It is less dense than water.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Gas giant</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>146+</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Saturn">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#e9c46a" />
+            <ellipse cx="160" cy="132" rx="96" ry="22" fill="#f5e6a4" opacity="0.7" />
+            <ellipse cx="160" cy="132" rx="82" ry="18" fill="#d4b15b" opacity="0.8" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="uranus" data-body="uranus" aria-labelledby="uranus-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="uranus-title">Uranus</h2>
+          <p>
+            Uranus is an ice giant that rotates on its side, giving it an unusual
+            seasonal pattern.
+          </p>
+          <ul class="fact-list">
+            <li>Its blue-green color comes from methane in its atmosphere.</li>
+            <li>It has a faint ring system.</li>
+            <li>It is the coldest planet in the solar system.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Ice giant</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>27</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Uranus">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#7bdff2" />
+            <ellipse cx="160" cy="132" rx="94" ry="18" fill="#8ecae6" opacity="0.5" />
+            <ellipse cx="160" cy="132" rx="82" ry="12" fill="#4ea8de" opacity="0.4" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="neptune" data-body="neptune" aria-labelledby="neptune-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="neptune-title">Neptune</h2>
+          <p>
+            Neptune is the farthest planet from the Sun and is known for its wild
+            storms and fast winds.
+          </p>
+          <ul class="fact-list">
+            <li>It is an ice giant.</li>
+            <li>It has a dark storm called the Great Dark Spot.</li>
+            <li>It has a faint ring system.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Ice giant</dd>
+            </div>
+            <div>
+              <dt>Moons</dt>
+              <dd>14</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of Neptune">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#3a86ff" />
+            <path d="M103 122c18-26 45-38 78-25" stroke="#6ec5ff" stroke-width="8" stroke-linecap="round" />
+            <path d="M108 153c24 16 52 21 83 9" stroke="#6ec5ff" stroke-width="8" stroke-linecap="round" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="body-section" id="moon" data-body="moon" aria-labelledby="moon-title">
+        <div class="body-copy">
+          <p class="eyebrow">Celestial body</p>
+          <h2 id="moon-title">Moon</h2>
+          <p>
+            Earth's Moon is the closest celestial body to our planet and helps
+            shape ocean tides and the rhythm of the night sky.
+          </p>
+          <ul class="fact-list">
+            <li>It is Earth's only natural satellite.</li>
+            <li>It has no atmosphere to hold heat.</li>
+            <li>Its phases repeat every 29.5 days.</li>
+          </ul>
+          <dl class="science-list">
+            <div>
+              <dt>Type</dt>
+              <dd>Natural satellite</dd>
+            </div>
+            <div>
+              <dt>Distance</dt>
+              <dd>About 384,400 km from Earth</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="body-media" aria-hidden="true">
+          <svg viewBox="0 0 320 260" role="img" aria-label="Illustration of the Moon">
+            <rect width="320" height="260" rx="28" fill="#09111e" />
+            <circle cx="160" cy="132" r="72" fill="#d8dce0" />
+            <circle cx="142" cy="116" r="16" fill="#b0b5bb" />
+            <circle cx="184" cy="144" r="10" fill="#b0b5bb" />
+            <circle cx="130" cy="158" r="8" fill="#b0b5bb" />
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#home" aria-label="Back to the top">↑ Top</a>
+
+    <script src="../script.js"></script>
+
+  </body>
+</html>
+
